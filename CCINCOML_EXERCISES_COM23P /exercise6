@@ -1,0 +1,824 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [
+        "FKj-F10WsctE"
+      ],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/opeeope/CCINCOML_EXERCISES_COM23P/blob/main/CCINCOML_EXERCISES_COM23P%20/exercise6\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Exercise 6"
+      ],
+      "metadata": {
+        "id": "2YKNSy_M9wSB"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Lists"
+      ],
+      "metadata": {
+        "id": "waosO4TAeA-S"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Create a list\n",
+        "\n",
+        "- The name of the new list should be  `month`\n",
+        "\n",
+        "- The list should contain all the months in a year (January, February, March, April, May, June, July, August, September, October, November, December)"
+      ],
+      "metadata": {
+        "id": "AW0H1ylt3H9g"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "3a9CllzZ28_6"
+      },
+      "outputs": [],
+      "source": [
+        "\n",
+        "month = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Display an element\n",
+        "\n",
+        "- Display the fourth element 'April' in the `month` list"
+      ],
+      "metadata": {
+        "id": "lDgi4WMA3UDM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "month[3]"
+      ],
+      "metadata": {
+        "id": "-K4Umghk34X3",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "8c7f52a9-3a73-4812-84ab-a1646e3a3901"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'April'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. Slice the list\n",
+        "\n",
+        "- Use slicing to get the last 4 months of the year of (September, October, November, December) of the `month` list"
+      ],
+      "metadata": {
+        "id": "2sgJy-_C4N8b"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "month[-4:]"
+      ],
+      "metadata": {
+        "id": "xARijZmm4bp2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7d123b21-5f1b-4c6d-d4b3-91ecd392cc54"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['September', 'October', 'November', 'December']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Use slicing to get the first 4 months of the year (January, February, March, April) of the `month` list"
+      ],
+      "metadata": {
+        "id": "ZNYReiVbp4qN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "month[:4]"
+      ],
+      "metadata": {
+        "id": "5QEm97VXp5Bi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "43c276cb-4a70-4bf1-d9ea-7a62c669a165"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['January', 'February', 'March', 'April']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. List Methods\n",
+        "\n",
+        "- Get the size of the month list using the `len()` method"
+      ],
+      "metadata": {
+        "id": "wZBoOGlh4zf9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(len(month))"
+      ],
+      "metadata": {
+        "id": "0xoFuFFw48AX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c6b401ac-d43d-46bc-dca8-9d10f0df2197"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Get the element with the largest value of the month list using `max()`"
+      ],
+      "metadata": {
+        "id": "P5bCjc8Xq4Fd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(max(month))"
+      ],
+      "metadata": {
+        "id": "Yp3BmlEQq4k7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d0c499f7-1adb-44d7-fc15-9ac88290a69e"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "September\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Get the element with the smallest value of the month list using `min()`"
+      ],
+      "metadata": {
+        "id": "dGXbdxgJq5HC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(min(month))"
+      ],
+      "metadata": {
+        "id": "2CIePRDMq5aN",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "15cb475f-8530-439a-be7c-4c80cf09e7c0"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "April\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Sort the months of the year by alphabetical order using the `sorted()` function"
+      ],
+      "metadata": {
+        "id": "rmnq1YbHta7L"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(sorted(month))\n"
+      ],
+      "metadata": {
+        "id": "EBB3CLFGtbKg",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ac84e469-2ade-4c24-ff66-e294825cce51"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['April', 'August', 'December', 'February', 'January', 'July', 'June', 'March', 'May', 'November', 'October', 'September']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Tuple"
+      ],
+      "metadata": {
+        "id": "R4Rkhy42sWQc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Create a tuple with only three elements, the elements are:\n",
+        "\n",
+        "- Your month of birth in integers\n",
+        "- Your day of birth in integers\n",
+        "- Your year of birth in integers\n",
+        "\n",
+        "Use tuple unpacking to directly assign the month, day, year variable to each elements in your tuple."
+      ],
+      "metadata": {
+        "id": "0qdb8lX53Iux"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "birthday = (10,15,2002)\n",
+        "print (\"my birth month is\", birthday[0])\n",
+        "print (\"my birth day is\", birthday[1])\n",
+        "print (\"my birth year is\", birthday[2])"
+      ],
+      "metadata": {
+        "id": "E14Lb0Y0wwzL",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d75d326e-a6cc-41f6-c979-2f8cc461090e"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my birth month is 10\n",
+            "my birth day is 15\n",
+            "my birth year is 2002\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Set\n"
+      ],
+      "metadata": {
+        "id": "pqgIEqbksah2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. The list below contains a number of a products of a computer store. Notice that there are duplicate values."
+      ],
+      "metadata": {
+        "id": "PxFhHDRg2zXs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "products = [\"laptop\", \"smartphone\", \"tablet\", \"mouse\" ,\"powerbank\", \"headphones\", \"laptop\", \"speakers\", \"printer\", \"monitor\", \"projector\", \"mouse\", \"keyboard\"]"
+      ],
+      "metadata": {
+        "id": "WXYdz82fxpdU"
+      },
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The difference between a list and a set is that a list allows duplicate values. One way to remove duplicates is to convert a list into a set.\n",
+        "\n",
+        "Convert the `products` list into a set"
+      ],
+      "metadata": {
+        "id": "vr-5xd3f2Vgn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "products = set(products)"
+      ],
+      "metadata": {
+        "id": "Z_Ao388J2f50"
+      },
+      "execution_count": 26,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Verify if \"headphones\" exists in the `products` set  using the `in` operator"
+      ],
+      "metadata": {
+        "id": "d9fOZL4g3a9t"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# put your answer here"
+      ],
+      "metadata": {
+        "id": "ETJJFv-u3b23"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Dictionaries"
+      ],
+      "metadata": {
+        "id": "FKj-F10WsctE"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Create a dictionary of your favorites\n",
+        "\n",
+        "- Keys should be the type\n",
+        "- Values should be the sample from that type\n",
+        "\n",
+        "Example:\n",
+        "\n",
+        "food: friedchicken\n",
+        "\n",
+        "color: blue\n",
+        "\n",
+        "sport: badminton\n",
+        "\n",
+        "drink: mangojuice\n",
+        "\n",
+        "dessert: cheesetart\n"
+      ],
+      "metadata": {
+        "id": "71KOC3D94P7m"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "8lrrq4xT3Zww",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bbb32842-53af-4821-8891-be50680600cc"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['eating', 'sleeping', 'basketball', 'purple', 'alfonso', 'chicken wings', 'sports', 'FPSgames']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Loops"
+      ],
+      "metadata": {
+        "id": "cbsI1vwD1nI7"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Write a for loop to iterate all elements of the `month` list. Print each element for every iteration."
+      ],
+      "metadata": {
+        "id": "VV429-WhDmzU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "month = ['January', 'February', 'march' 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n",
+        "\n",
+        "for x in month:\n",
+        "    print(x)"
+      ],
+      "metadata": {
+        "id": "Ki5-XrM_DnNp",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "78b9b7fa-73f1-4fce-abfe-b719021daffb"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "January\n",
+            "February\n",
+            "marchApril\n",
+            "May\n",
+            "June\n",
+            "July\n",
+            "August\n",
+            "September\n",
+            "October\n",
+            "November\n",
+            "December\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Write a for loop and add a condition to only display the elements in the `month` list that ends with \"ber\""
+      ],
+      "metadata": {
+        "id": "XaezrcWxEEQd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "month = ['January', 'February', 'march' 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n",
+        "\n",
+        "for x in month:\n",
+        "    if x.find(\"ber\") > 0:\n",
+        "      print(x)"
+      ],
+      "metadata": {
+        "id": "LR4utW6rEEm1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "dd419afb-cefd-4689-e923-4c1304c1c28e"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "September\n",
+            "October\n",
+            "November\n",
+            "December\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. Write a for loop and add a condition to only display the elements in the `month` list that does not end with \"ber\""
+      ],
+      "metadata": {
+        "id": "WcBRUEaFFHWf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "month = ['January', 'February', 'march' 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n",
+        "\n",
+        "for x in month:\n",
+        "    if x.find(\"ber\") < 0:\n",
+        "      print(x)"
+      ],
+      "metadata": {
+        "id": "Bw5D0HLNFHrs",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b9e849a8-7438-43ea-fd5a-273428df1d60"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "January\n",
+            "February\n",
+            "marchApril\n",
+            "May\n",
+            "June\n",
+            "July\n",
+            "August\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. Write a for loop and use `range()` to display your firstname five times"
+      ],
+      "metadata": {
+        "id": "gpvQU9hfF0TF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(5):\n",
+        "    print(\"chris\")"
+      ],
+      "metadata": {
+        "id": "o-NhO5_nF0hN",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f3f08428-2f91-4d9a-a786-4dda3adf98ba"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "chris\n",
+            "chris\n",
+            "chris\n",
+            "chris\n",
+            "chris\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. Write a for loop that iterates over the names list to create a usernames list.\n",
+        "\n",
+        "To create a username for each name, make everything lowercase and replace spaces with underscores. Running your for loop over the list:\n",
+        "\n",
+        "Example:\n",
+        "\n",
+        "names = [\"Joey Tribbiani\", \"Monica Geller\", \"Chandler Bing\", \"Phoebe Buffay\"]\n",
+        "\n",
+        "should create a new list\n",
+        "\n",
+        "usernames = [\"joey_tribbiani\", \"monica_geller\", \"chandler_bing\", \"phoebe_buffay\"]"
+      ],
+      "metadata": {
+        "id": "VLcFGqI9GUic"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "names = [\"Joey Tribbiani\", \"Monica Geller\", \"Chandler Bing\", \"Phoebe Buffay\"]\n",
+        "usernames = []\n",
+        "for i in names:\n",
+        "  usernames.append(i.lower().replace(\" \",\"_\"))\n",
+        "\n",
+        "  print(usernames)"
+      ],
+      "metadata": {
+        "id": "IqqiHcX_GUzw",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6a819823-be19-4650-ebad-d99bdecaece3"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['joey_tribbiani']\n",
+            "['joey_tribbiani', 'monica_geller']\n",
+            "['joey_tribbiani', 'monica_geller', 'chandler_bing']\n",
+            "['joey_tribbiani', 'monica_geller', 'chandler_bing', 'phoebe_buffay']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6. Write a while loop to iterate throught the `month` list\n",
+        "\n",
+        "- Break the loop if the element ends with \"ber\""
+      ],
+      "metadata": {
+        "id": "6OPeRpAtI10D"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "month = ['January', 'February', 'march' 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\n",
+        "\n",
+        "counter = 0\n",
+        "while counter < len(month):\n",
+        "  print(month[counter])\n",
+        "  counter = counter + 1\n",
+        "  if month[counter].find('ber') > 0:\n",
+        "    break\n"
+      ],
+      "metadata": {
+        "id": "0sDyOhMXI2TX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e7a8969d-d7a4-42c5-cbf0-1484f6d1f604"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "January\n",
+            "February\n",
+            "marchApril\n",
+            "May\n",
+            "June\n",
+            "July\n",
+            "August\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Functions"
+      ],
+      "metadata": {
+        "id": "-UGI_QgO1h07"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Write a python function named population_density that takes two arguments, population and land_area, and returns a population density calculated from those values.\n",
+        "\n",
+        "The population density can be calculated using this formula:\n",
+        "\n",
+        "population_density = population/land_area"
+      ],
+      "metadata": {
+        "id": "f4bjOx-C1jar"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "GJVkPniMLD82"
+      },
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Write an `averagesteps()` function to compute the average the number of steps you take every day.\n",
+        "\n",
+        "- The function should accept a list and compute the average of all elements inside the list\n",
+        "\n",
+        "- Create a list with seven elements. The values in the list are your average steps your take everyday.\n",
+        "\n",
+        "- Pass the list to the function and call the function"
+      ],
+      "metadata": {
+        "id": "DEryE1965T3U"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# put your answer here"
+      ],
+      "metadata": {
+        "id": "TzhnugYU6D-6"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
